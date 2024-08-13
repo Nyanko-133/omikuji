@@ -1,0 +1,44 @@
+/*画面背景色*/
+body {
+    background: #fff9e3;
+}
+/*ボタンのデザイン設定*/
+#btn {
+    /*幅*/
+    width: 200px;
+    /*高さ*/
+    height: 200px;
+    /*ボタン背景色*/
+    background: #f15156;
+    /*ボタン角の丸み設定(正円は50%)*/
+    border-radius: 50%;
+    /*ボタン位置*/
+    margin: 30px auto;
+    /*フォント位置(寄せ)*/
+    text-align: center;
+    /*フォント行間幅*/
+    line-height: 200px;
+    /*フォント色*/
+    color: #fff;
+    /*フォントサイズ*/
+    font-size: 42px;
+    /*カーソル種類*/
+    cursor: pointer;
+    /*ボタンに影を付ける(横方向・下方向・ぼかし有無・色)*/
+    box-shadow: 0 10px 0 #ce3f35;
+/*ボタンテキストが選択できないようにする*/
+    user-select: none;
+}
+
+/*ボタンにポインタ合わせた際の動き*/
+#btn:hover {
+    /*ボタンの透明度*/
+    opacity: 0.9;
+}
+/*ボタンが押し込まれた際の動き*/
+#btn:active {
+    /*影をもともとの半分にすることで押し込んだように見せる*/
+    box-shadow: 0 5px 0 #d1483e;
+    /*ボタン位置を少しずらすことで押し込んだように見せる*/
+    margin-top: 35px;
+}
